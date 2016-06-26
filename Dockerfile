@@ -1,5 +1,6 @@
-# Starting from Ubuntu Trusty
 FROM ubuntu:trusty
+
+MAINTAINER Shawn Bower shawn.bower@gmail.com
 
 # We need wget to download the custom version of Firefox, xvfb to have a virtual screen and Firefox so all necessary libraries are installed.
 RUN apt-get update && apt-get install -y wget xvfb firefox
