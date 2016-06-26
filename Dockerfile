@@ -1,8 +1,8 @@
-FROM ubuntu:trusty
+FROM dtr.cucloud.net/cs/base
 
 MAINTAINER Shawn Bower shawn.bower@gmail.com
 
-# We need wget to download the custom version of Firefox, xvfb to have a virtual screen and Firefox so all necessary libraries are installed.
+# Get xvfb and grab firefox from apt to get all the dependencies
 RUN apt-get update && apt-get install -y wget xvfb firefox
 
 # Setting the Firefox version and installation directory through environment variables.
